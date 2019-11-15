@@ -1,0 +1,5 @@
+rootProject.name = 'iBeacons'
+include ':@nois_react-native-beacons-manager'
+project(':@nois_react-native-beacons-manager').projectDir = new File(rootProject.projectDir, '../node_modules/@nois/react-native-beacons-manager/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
